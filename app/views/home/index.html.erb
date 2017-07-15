@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TEAM MAUL</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Satisfy|Bree+Serif|Candal|PT+Sans">
+    <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css.scss">
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css.scss">
+
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>    
+</head>
+
+<body>
+  <section id="banner">
+    <div class="bg-color">
+        <header id="header">
+            <div class="container">
+                <div id="mySidenav" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <a href="#about">About</a>
+                  <a href="#team">Team</a>
+                  <a href="#project">Project</a>                  
+                </div>
+                <span onclick="openNav()" class="pull-right menu-icon">☰</span>
+            </div>            
+        </header>
+        <div class="container">                                
+        <div class="row">
+                <div class="inner text-center">
+                    <img class="img-responsive">
+                    <%= image_tag 'Logo_MAUL_Project_ROJO.png', :width=>300, :heigth=>300 %>
+                    </img>                
+                    <h2>Plataforma para el Liderazgo y Desarrollo Comunitario</h2>
+                </div>            
+        </div>
+        </div>                                
+    </div>
+  </section>
+
+  <section id="about" class="section-padding">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center marb-35">
+            <h1 class="header-h">MAUL PROJECT</h1>
+            <p class="header-p">La plataforma que reune los eventos y actividades desarrollados por comunidades, líderes y sitios de tu ciudad. Lo mejor, que te permite acercarte, aportar y gestionar cada evento. ¿No sabes donde ir?...Únete a la maul!
+            <br></p>
+        </div>
+        <div class="col-md-10">
+         <div class="col-md-6 col-sm-6">
+             <div class="about-info">
+                 <h2 class="heading">Maul, empujamos tod@s</h2>
+                 <p>En MAUL podrás:
+                 </p>
+                 <div class="details-list">
+                     <ul>
+                         <li><i class="fa fa-check"></i>Identificar comunidades y sitios</li>
+                         <li><i class="fa fa-check"></i>Identificar líderes</li>
+                         <li><i class="fa fa-check"></i>Gestionar eventos</li>
+                         <li><i class="fa fa-check"></i>Participar en eventos</li>
+                         <li><i class="fa fa-check"></i>Aportar o donar en la realización de actividades</li>
+                         <li><i class="fa fa-check"></i>Conocer que cosas estan pasando en tu ciudad</li>
+                     </ul>
+                 </div>                 
+             </div>
+         </div>
+          <div class="col-md-6 col-sm-6">            
+            <!--<img class="image-responsive">-->
+                <video width="500" controls>
+                    <!--<source src="video/MaulProject_Intro.mp4" type="video/mp4">-->
+                    <source src="/video/MaulProject_Intro.webm" type="video/webm">
+                </video>
+            <!--</img>-->
+          </div>
+        </div>
+    </div>        
+    </div>
+  </section>
+
+  <section id="team">    
+    <div class="section-padding" style="padding:50px;">
+    <h1 class="header-h text-center">EQUIPO DE DESARROLLO</h1>
+    <div class="container">
+        <div class="row" style="padding:10px;">
+            <div class="col-md-4 text-center">
+                <div class="thumbnail">
+                    <img class="image-responsive" src="http://placehold.it/750x450" alt="">
+                    <div class="caption">
+                        <h4 class="header-h">Samuel Zapata S.<br>
+                        <small>Desarrollador de Negocio</small>
+                        </h4>
+                    </div>                    
+                </div>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <div class="thumbnail">
+                    <img class="image-responsive" src="http://placehold.it/750x450" alt="">
+                    <div class="caption">
+                        <h4 class="header-h">Mateo Trujillo<br>
+                        <small>Desarrollador de Producto</small>
+                        </h4>
+                    </div>                    
+                </div>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <div class="thumbnail">
+                    <img class="image-responsive" src="http://placehold.it/750x450" alt="">
+                    <div class="caption">
+                        <h4 class="header-h">Hector Narvaez<br>
+                        <small>Desarrollador de Producto</small>
+                        </h4>
+                    </div>                    
+                </div>
+            </div>            
+        </div>
+    </div>
+    </div>
+  </section>
+
+  <section id="project">
+      <footer class="footer text-center">
+          <div class="footer-top">
+          <div class="row">
+              <h4 class="widget-title">MAUL PROJECT</h4>
+              <p>
+                Contactanos: 317 5571203  
+              </p>
+          </div>              
+          </div>
+      </footer>
+  </section>
+
+</body>
+</html>
