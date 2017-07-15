@@ -30,11 +30,13 @@ table {
 	border-spacing: 0;
 }
 #banner{
-    background-image: url('../../assets/images/res02.jpg') no-repeat center top;
     background-size: cover;
     min-height: 600px;
 }
 .bg-color{
+    background: url('sebastian_3.jpg') center top;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: #0b56f6;
     min-height: 600px;
 }
