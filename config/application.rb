@@ -7,7 +7,7 @@ require 'rails/all'
 Bundler.require(*Rails.groups)
 
 #
-config.assets.initialize_on_precompile = false
+#config.assets.initialize_on_precompile = false
 
 module TeamMaul
   class Application < Rails::Application
