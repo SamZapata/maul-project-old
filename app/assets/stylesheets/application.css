@@ -12,12 +12,13 @@
  *
  *= require_tree .
  *= require bootstrap
- *=	font-awesome
+ *=	require font-awesome
  *= style
  *= imagehover
  *= require_self
  */
 
+ @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "font-awesome";
  
