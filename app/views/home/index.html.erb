@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css.scss">
     <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css.scss">
+    <!--<link href="font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">-->
 
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -42,11 +43,11 @@
         </div>                                
     </div>
   </section>
-  <div id="flotante_up" style="display: block; margin-top: 439px;">
+  <!--<div id="flotante_up" style="display: block; margin-top: 439px;">
     <a href="#" onclick="scroll_top();">
       <img src="http://hayevento.com/assets/top.png" alt="action_top">
     </a>
-  </div>
+  </div>-->
   <section id="about" class="section-padding">
     <div class="container">
     <div class="row">
@@ -90,16 +91,23 @@
     <div class="section-padding" style="padding:50px;">
     <h1 class="header-h text-center">EQUIPO DE DESARROLLO</h1>
     <div class="container">
-        <div class="row" style="padding:10px;">
+        <div class="row" style="padding:6px;">
+          
+          <div class="col-md-12" align="center">
             <div class="col-md-4 text-center">
                 <div class="thumbnail">
                     <img class="image-responsive" alt="">
                       <%= image_tag 'avatar_jsam.png'%>
                     </img>
                     <div class="caption">
-                        <h4 class="header-h">Samuel Zapata S.<br>
+                        <h4 class="header-h">Johnny Zapata S.<br>
                         <small>Desarrollador de Negocio</small>
                         </h4>
+                        <ul class="list-inline">                        
+                          <li><a href="https://www.linkedin.com/in/johnny-s-zapata-s-748b14144/"><i class="fa fa-2x fa-linkedin-square"></i></a></li>
+                          <li><a href="https://twitter.com/jsamzapata"><i class="fa fa-2x fa-twitter-square"></i></a></li>
+                          <li><a href="#"><i class="fa fa-2x fa-send"></i></a></li>
+                        </ul>                        
                     </div>                    
                 </div>
             </div>
@@ -113,11 +121,16 @@
                         <h4 class="header-h">Mateo Trujillo<br>
                         <small>Desarrollador de Producto</small>
                         </h4>
+                        <ul class="list-inline">                        
+                          <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a></li>
+                          <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a></li>
+                          <li><a href="https://www.behance.net/MateoTrujillo"><i class="fa fa-2x fa-send"></i></a></li>
+                        </ul>                        
                     </div>                    
                 </div>
             </div>
 
-            <div class="col-md-4 text-center">
+            <!-- <div class="col-md-4 text-center">
                 <div class="thumbnail">
                     <img class="image-responsive" alt="">
                       <%= image_tag 'avatar_hector.png'%>
@@ -127,8 +140,9 @@
                         <small>Desarrollador de Producto</small>
                         </h4>
                     </div>                    
-                </div>
-            </div>            
+                </div>          
+            </div> -->
+          </div>    
         </div>
     </div>
     </div>
@@ -138,10 +152,11 @@
       <footer class="footer text-center">
           <div class="footer-top">
           <div class="row">
-              <h4 class="widget-title">MAUL PROJECT</h4>
-              <p>
-                Contactanos: 317 5571203  
-              </p>
+            <img class="img-responsive">
+                <%= image_tag 'Logo_MAUL_Project_BLANCO_.png', :width=>200, :heigth=>200 %>
+            </img>
+            <h4 class="heading">Proyecto de Emprendimiento</h4>
+              <!--<h4 class="widget-title">MAUL PROJECT</h4>-->
           </div>              
           </div>
       </footer>
